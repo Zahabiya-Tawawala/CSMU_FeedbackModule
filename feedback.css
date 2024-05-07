@@ -1,0 +1,79 @@
+h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.subject-selector{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    margin: 1em;
+    padding: 1rem;
+}
+
+/* .fa-minus {
+    background-color: aquamarine;
+}
+.fa-plus {
+    background-color: aqua; 
+} */
+
+.subject-selector select{
+    width: 20em;
+    height: 3em;
+}
+.subject-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.teacher-feedback-wrapper{
+   border: solid 2px black; 
+   border-radius: 20px; 
+   padding: 1em;
+   margin: 1em;
+   width: 50em;
+}
+
+.course-feedback-wrapper{
+    border: solid 2px black;  
+    border-radius: 20px;
+    padding: 1em;
+    margin: 1em;
+    width: 50em;
+}
+.feedback-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    max-width: 100%;
+}
+
+.feedback-wrapper p{
+    font-size: 15px;
+}
+
+.btn-primary{
+    margin-top: 1em;
+}
+
+.rating{
+    display: flex;
+    gap: 2em;
+    margin: 1em;
+    color: yellow;
+}
+
+.rating .fa-star{
+    cursor: pointer;
+}
+.fa-star :hover{
+    transition: yellow;
+}

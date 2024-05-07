@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+.main-container{
+    padding: 10px;
+}
+.main-container .sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub-container .left-container{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.sub-container .left-container .left-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    background-color: #294B7A;
+    padding: 20px;
+}
+.sub-container .left-container .left-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* right container  */
+
+.sub-container .right-container{
+    display: flex;
+    justify-content:center;
+    gap: 100px;
+    
+}
+.sub-container .right-container .right-head img{
+    height: 200px;
+    width: 300px;
+}
+.sub-container .right-container .form-select-options{
+    width: 500px;
+    display: flex;
+    padding: 6px;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+
+}
+
+/* form container  */
+.form-container{
+    background-color: aliceblue;
+    border-radius: 18px;
+    padding: 10px;
+}
+
+/* all select options  */
+.form-select-options .department,
+.form-select-options .degree,
+.form-select-options .programme,
+.form-select-options .academicyear,
+.form-select-options .semester{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.form-select-options .department select,
+.form-select-options .degree select,
+.form-select-options .programme select,
+.form-select-options .academicyear select,
+.form-select-options .semester select{
+    padding: 6px;
+}
+
+.form-container .btn{
+    margin-top: 18px;
+ background-color: #294B7A;
+ color: white;
+}
+
+/* for mobile  */
+.left-links .fa-bars,
+.left-links .fa-xmark{
+    display: none;
+}
+
+/* make it fully responsive for every screen size */

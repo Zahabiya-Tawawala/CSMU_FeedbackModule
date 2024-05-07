@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+.main-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-container .sub-container{
+    margin: 10px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.main-container .left-container{
+    height: 100%;
+    flex-basis: 30%;
+    background-color:#294B7A !important;
+}
+.main-container .left-container .left-links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    padding-top: 40px;
+}
+.left-container .left-links li a{
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+.left-container .left-links li a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color:#F98000;
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+}
+.left-container .left-links li a:hover::after{
+    width: 100%;
+}
+
+
+/* -----right-container------------ */
+.right-container{
+    display: flex;
+    flex-basis: 70%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.right-container .right-head{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+    align-items: center;
+
+}
+.right-container .right-head img{
+    width: 200px;
+}
+
+.right-container .form-container {
+   
+   padding: 10px;
+}
+.right-container .form-container form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.right-container .form-container form .form-inputs{
+    width: 100%;
+    display: flex;
+    justify-content:start;
+    gap: 150px;
+    align-items: center;
+    
+}
+.right-container .form-container form .form-select-options{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+   
+    padding: 10px;
+}
+.right-container .form-container form .form-select-options select{
+    width: 100%;
+    padding: 6px;
+}
+.form-container .form-select-options option{
+    font-size: 14px;
+    min-height: 10px !important;
+}
+.btn-view-form{
+    float: inline-end;
+    position: absolute;
+    bottom: 0;
+    right: 110px;
+}
+#Dept_of_Apl_sci_prog_ug,
+#Dept_of_Apl_sci_prog_pg,
+.dept_of_basic_sci_ug,
+.dept_of_basic_sci_pg,
+.dept_of_basic_sci_phd,
+.dept_of_buss_management_ug,
+.dept_of_buss_management_pg,
+.dept_of_cilvl_eng_ug,
+.dept_of_civil_eng_pg,
+.dept_of_civil_eng_phd,
+.dept_of_com_ug,
+.dept_of_com_pg,
+.dept_of_csit_ug,
+.dept_of_csit_pg,
+.dept_of_csit_phd,
+.dept_of_design_arts_ug,
+.dept_of_design_arts_diploma,
+.dept_of_design_atrs_pg ,
+.dept_of_elec_eng_ug,
+.dept_of_elec_eng_pg,
+.dept_of_elec_eng_pg,
+.dept_of_hos_management_pg,
+.dept_of_hos_management_certificate,
+.dept_of_hos_management_diploma,
+.dept_of_Humanities_ug,
+.dept_of_Humanities_pg,
+.dept_of_Humanities_phd,
+.dept_of_journalism_massComm_ug,
+.dept_of_journalism_massComm_pg,
+.dept_of_journalism_massComm_phd,
+.dept_of_law_ug,
+.dept_of_law_diploma,
+.dept_of_law_pg,
+.dept_of_law_phd,
+.Dept_of_lib_info_sci_ug,
+.Dept_of_lib_info_sci_pg,
+.Dept_of_lib_info_sci_phd,
+.dept_of_mech_engg_ug,
+.dept_of_mech_engg_pg,
+.dept_of_pharmacy_ug,
+.dept_of_pharmacy_diploma,
+.dept_of_social_work_ug,
+.dept_of_social_work_pg,
+.dept_of_hos_management_ug
+{
+    display:block;
+}
+

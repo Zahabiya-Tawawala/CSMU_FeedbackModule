@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback-Form</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css" integrity="sha512-yVvxUQV0QESBt1SyZbNJMAwyKvFTLMyXSyBHDO4BG5t7k/Lw34tyqlSDlKIrIENIzCl+RVUNjmCPG+V/GMesRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js" integrity="sha512-eSeh0V+8U3qoxFnK3KgBsM69hrMOGMBy3CNxq/T4BArsSQJfKVsKb5joMqIPrNMjRQSTl4xG8oJRpgU2o9I7HQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- --------------------subject selection section ---------------------------->
+    <h1>feedback form</h1>
+    <div class="subject-wrapper">
+        <div id="selectors-container">
+            <div class="subject-selector">
+                <i class="fa-solid fa-minus" onclick="removeSelector(this)"></i>
+                <select class="chosen subject-input" name="" id="">
+                    <option value="">dsa</option>
+                    <option value="">oops</option>
+                    <option value="">dbms</option>
+                    <option value="">coa</option>
+                    <option value="">os</option>
+                    <option value="">cn</option>
+                    <option value="">java</option>
+                    <option value="">python</option>
+                    <option value="">dwm</option>
+                    <option value="">daa</option>
+                </select>
+                <i class="fa-solid fa-plus" onclick="addSelector(this)"></i>
+            </div>
+        </div>
+    </div>
+ <!-- --------------------feedback section ---------------------------->
+    <div class="parent-feedback-wrapper" ">
+<div class="feedback-wrapper">
+     <!-- --------------------course selection section ---------------------------->
+    <div class="course-feedback-wrapper">
+        <h3 class="text-center">Feedback by Course</h3>
+        <p>1. Course content (in terms of recent advancements, and clarity)</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+
+        <p>2. Adequacy of course content</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+
+        <p>3. Scope for use of innovative teaching methods (Group discussion, field exercises, role plays, use of audio-visual aids, student seminar etc.)</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+
+        <p>4. Learning value (in terms of knowledge, concepts, skills building, analytical abilities and in broadening one’s perspectives)</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+
+        <p>5. Availability of  reading Material (Library/Internet /Others)</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </div>
+    <!-----------------------teacher feedback section ---------------------------->
+    <div class="teacher-feedback-wrapper">
+        <h3 class="text-center">Feedback by Teacher</h3>
+        <p>1. Knowledge base of the teacher (as perceived by you)</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+
+        <p>2. Communication skills (in terms of articulation and comprehensibility)</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+
+        <p>3. Sincerity / Commitment of the teacher (in terms of preparedness and interest in taking classes)</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+
+        <p>4. Interest generated by the teacher in the class</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+
+        <p>5. Ability to integrate course material with environment / other issues, to provide a broader perspective</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+
+        <p>6. Accessibility and availability of the teacher in the department for academic consultations</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+
+        <p>7. Initiative  taken  in formulating topics/ tests/assignments/examinations / seminars  and projects</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+
+        <p>8. Regularity in taking classes</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+
+        <p>9. Completion of the course in a thorough and satisfactory manner</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+
+        <p>10. Fairness in evaluating student performance and awarding grades.</p>
+        <form action="#">
+            <div class="rating">
+                <input type="text" name="rating" hidden>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </form>
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </div>
+</div>
+</div>
+
+</body>
+<script src="feedback.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(".chosen").chosen();
+</script>
+</html>

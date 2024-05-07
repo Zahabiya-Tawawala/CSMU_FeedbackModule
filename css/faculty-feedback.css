@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+ /* Right Container  */
+ .right-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 40px;
+ }
+ .right-container .right-head img{
+    height: 200px;
+    width: 300px;
+ }
+ .form-container{
+   border-radius: 12px;
+   background-color: aliceblue;
+   border: 1px solid black;
+   padding: 10px;
+ }
+  .form-inputs{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 22px;
+ }
+ .form-inputs .name,
+  .form-inputs .Faculty-ID,
+ .form-inputs .date,
+ .form-inputs .email{
+    display: flex;
+    width: 300px;
+    gap: 10px;
+    flex-direction: column;
+ }
+   .form-inputs .name input,
+  .form-inputs .Faculty-ID input,
+ .form-inputs .date input,
+ .form-inputs .email input{
+    padding: 6px;
+ }
+/* for mobile  */
+.left-links .fa-bars,
+.left-links .fa-xmark{
+    display: none;
+}
+
+
+/* ----Feedback Form----------------- */
+.que1{
+   display: block;
+   flex-direction: column;
+   justify-content: start;
+   /* align-items: center; */
+   padding: 10px;
+   
+  
+}
+.que1 h2{
+   font-size: 20px;
+}
+.rating {
+   display: inline-block;
+   direction: rtl;
+   gap: 100px !important;
+ }
+ 
+ .rating input {
+   display: none;
+ }
+ 
+ .rating label {
+   cursor: pointer;
+   font-size: 40px;
+   color: #ccc;
+   
+ }
+ 
+ .rating label:before {
+   content: '★';
+ }
+ 
+ .rating input:checked ~ label {
+   color: #ffcc00; /* Change color as needed for the filled star */
+ }
+
+ /* Submit button  */
+
+ #submitbtn{
+   width: 150px;
+   padding: 8px;
+   border: none;
+   outline: none;
+   background-color: #294B7A;
+   color: white;
+   border-radius: 12px;
+   margin-top: 1.5rem;
+ }
+ @media only screen and (max-width: 767px) {
+   .left-links{
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px;
+    gap: 20px;
+    width: 100%;
+
+   }
+   .left-links li{
+    margin-top: 10px;
+   }
+}

@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: antiquewhite; */
+}
+
+
+.right-container{
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* ---------Form Container ------------------  */
+.form-container{
+    border-radius: 12px;
+    padding: 20px;
+    background-color: aliceblue;
+    margin-top: 18px;
+    
+}
+.form-container .form-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:start;
+    align-items: center;
+    gap: 30px;
+}
+.form-container .form-inputs .name,
+.form-container .form-inputs .email,
+.form-container .form-inputs .mobile,
+.form-container .form-inputs .designation,
+.form-container .form-inputs .organization{
+    display: flex;
+    flex-direction: column;
+}
+.form-container .form-inputs .name input,
+.form-container .form-inputs .email input,
+.form-container .form-inputs .mobile input,
+.form-container .form-inputs .designation input,
+.form-container .form-inputs .organization input{
+    padding: 8px;
+    width: 350px;
+}
+.form-container .submitbtn{
+    padding: 4px;
+    width: 150px;
+    border: none;
+    outline: none;
+    background-color: #294B7A;
+    color: white;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+/* -----for questions----  */
+.que{
+    display: block;
+   
+    justify-content: start;
+    /* align-items: center; */
+    padding: 10px;
+    
+   
+ }
+.que h2{
+    font-size: 14px;
+ }
+ .rating {
+    display: inline-block;
+    direction: rtl;
+    gap: 100px !important;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+    
+  }
+  
+  .rating label:before {
+    content: '★';
+  }
+  
+  .rating input:checked ~ label {
+    color: #ffcc00; /* Change color as needed for the filled star */
+  }
+
+  /* --- for mobile screen ---  */
+  @media Screen and (max-width:600px){
+    .left-links{
+        flex-direction: column;
+        justify-content: start;
+        gap: 10px;
+        padding: 10px;
+    }
+    .left-links li{
+        margin-top: 10px;
+    }
+
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .form-container .form-inputs .name input,
+    .form-container .form-inputs .email input,
+    .form-container .form-inputs .mobile input,
+    .form-container .form-inputs .designation input,
+    .form-container .form-inputs .organization input{
+        padding: 8px;
+        width: 250px;
+    } 
+  }
+  
