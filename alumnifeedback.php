@@ -123,7 +123,10 @@ if(isset($_POST['submit'])){
                                 <label for="batch">Batch</label>
                                 <select name="batch" id="batch" class="w-75">
                                     <option value="">Select Year</option>
-                                 
+                                    <option value="year2">2021-25</option>
+                                    <option value="year2">2020-24</option>
+                                    <option value="year3">2019-23</option>
+                                    <option value="year4">2018-22</option>                                 
                                 </select>
                             </div>
                            
